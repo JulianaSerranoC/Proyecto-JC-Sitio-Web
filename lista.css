@@ -1,0 +1,56 @@
+section[id] {
+    scroll-margin-top: 70px;
+}
+
+.Lista {
+    padding: 0px;
+    margin: 0px;
+    font-family: poppins;
+}
+
+#listaheader {
+    margin: auto;
+    width: 2000px;
+    top: 0;
+    position: center;
+    left: 145px;
+    z-index: 100;
+    margin-left: 150px;
+}
+
+ul {
+    list-style: none;
+}
+
+.Lista li a {
+    background-color: rgb(240, 236, 243);
+    color: #6337ca;
+    text-decoration: none;
+    padding: 10px 18px;
+    display: block;
+}
+
+.Lista li a:hover {
+    background-color: #cfbdee;
+
+}
+
+.Lista > li {
+    float: left;
+}
+
+.Lista li ul {
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+
+.Lista li:hover > ul {
+    display: block;
+}
+
+.Lista li ul li {
+    position: relative;
+    right: -100px;
+    top: 0px;
+}

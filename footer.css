@@ -1,0 +1,12 @@
+footer {
+    bottom: 0;
+    background: linear-gradient(to right, #00093c, #71467c);
+    color: #fff;
+    padding: 100px 0 30px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    line-height: 20px;
+}
+.Logo img {
+    width: 300px;
+}

@@ -1,0 +1,559 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+.TituloHeader {
+   color: beige;
+   font-size: 50px;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   text-align: left;
+   display: flex;
+   justify-content: center;
+   background-image: url(Imagenes/Fondo2.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+   border-radius: 10px;
+   margin-top: 45px;
+   margin-left: 45px;
+   margin-right: 45px;
+}
+
+.TituloCercis h1 {
+   margin-top: 25px;
+}
+
+.Cercis {
+   width: 180px;
+   margin-left: 40px;
+}
+
+.TituloSecundario {
+   color: beige;
+   font-family: poppins;
+   margin-left: 30px;
+   margin-top: 60px;
+}
+
+article h2 {
+   text-align: center;
+   align-items: center;
+   margin-top: 100px;
+   font-family: poppins;
+}
+
+.Seccion1 {
+   display: flex;
+}
+
+.Seccion1 article img {
+   width: 350px;
+   padding-top: 30px;
+   font-family: poppins;
+   margin-left: 100px;
+   display: flex;
+}
+
+.ParrafoS1 {
+   margin-right: 100px;
+   margin-left: 100px;
+   margin-bottom: 10px;
+   text-align: justify;
+   padding-top: 100px;
+   font-family: poppins;
+   display: flex;
+}
+
+.ParrafoS2 {
+   margin-right: 100px;
+   margin-left: 100px;
+   text-align: justify;
+   font-family: poppins;
+   display: flex;
+}
+
+.ParaLectores {
+   text-align: center;
+   background-color: #9d4edd;
+   background-size: cover;
+   border-style: inset;
+   color: #fff; 
+   padding: 20px;
+   font-family: poppins;
+   margin-left: 50px;
+   margin-right: 50px;
+}
+.MasLeidos {
+   text-align: center;
+   font-family: poppins;
+   padding: 20px;
+}
+
+.TituloLibro1 {
+   margin-left: 40px;
+   font-family: poppins;
+   margin-top: 20px;
+}
+.TituloLibro12 {
+   margin-left: 40px;
+   font-family: poppins;
+   margin-top: 20px;
+}
+.TituloLibro13 {
+   margin-left: 40px;
+   font-family: poppins;
+   margin-top: 20px;
+}
+.TituloLibro14 {
+   margin-left: 40px;
+   font-family: poppins;
+   margin-top: 20px;
+}
+.Libro1 {
+   width: 200px;
+   height: 250px;
+   margin-top: 20px;
+   margin-left: 40px;
+   margin-bottom: 20px;
+}
+.LinkLibro1 {
+   color: #fff;
+   position: center;
+   margin-left: 100px;
+   margin-bottom: 0;
+   padding-top: 20px;
+}
+
+.TituloLibro2 {
+   margin-left: 40px;
+   margin-bottom: 75px;
+   font-family: poppins;
+   margin-top: 30px;
+}
+.Libro2 {
+   width: 150px;
+   height: 250px;
+   margin-bottom: 20px;
+   margin-left: 68px;
+}
+.LinkLibro2 {
+   color: #fff;
+   position: center;
+   margin-left: 100px;
+}
+
+.TituloLibro3 {
+   margin-left: 40px;
+   margin-bottom: 20px;
+   font-family: poppins;
+   margin-top: 30px;
+}
+.Libro3 {
+   width: 150px;
+   height: 250px;
+   margin-left: 68px;
+   margin-top: 25px;
+   margin-bottom: 20px;
+}
+.LinkLibro3 {
+   color: #fff;
+   position: center;
+   margin-left: 100px;
+}
+
+.TituloLibro4 {
+   margin-left: 20px;
+   margin-bottom: 20px;
+   font-family: poppins;
+   margin-top: 20px;
+}
+.Libro4 {
+   width: 150px;
+   height: 250px;
+   margin-top: 64px;
+   margin-left: 68px;
+   margin-bottom: 20px;
+}
+.LinkLibro4 {
+   color: #fff;
+   position: center;
+   margin-left: 100px;
+}
+
+
+#slider input[type=radio] {
+   display: none;
+}
+#slider label {
+   cursor:pointer;
+   text-decoration: none;
+}
+#slides {
+   padding: 10px;
+   border: 3px solid #ccc;
+   background: #fff;
+   position: relative;
+   z-index: 1;
+   margin-left: 100px;
+   margin-right: 100px;
+}
+#overflow {
+   width: 100%;
+   overflow: hidden;
+}
+#slide1:checked ~ #slides .inner {
+   margin-left: 0;
+}
+#slide2:checked ~ #slides .inner {
+   margin-left: -100%;
+}
+#slide3:checked ~ #slides .inner {
+   margin-left: -200%;
+}
+#slide4:checked ~ #slides .inner {
+   margin-left: -300%;
+}
+#slides .inner {
+   transition: margin-left 500ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+   width: auto;
+   line-height: 0;
+   height: 400px;
+}
+#slides .slide {
+   width: 25%;
+   float: left;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+   color: #fff;
+}
+#slides .slide_1 {
+   background: #5a189a;
+   display: block;
+}
+#slides .slide_2 {
+   background: #7b2cbf;
+   display: block;
+}
+#slides .slide_3 {
+   background: #9d4edd;
+   display: block;
+}
+#slides .slide_4 {
+   background: #c77dff;
+   display: block;
+}
+
+.NovelasyCuentos {
+   margin-left: 550px;
+   color: #f7f7f7;
+}
+
+.DIVNYC {
+   justify-content: center;
+   display: flex;
+   background-color: #9d4edd;
+   margin-left: 100px;
+   margin-right: 100px;
+   box-shadow: 10px 10px 10px 5px rgb(62, 7, 114);
+}
+.DIVNYC h2 {
+   padding-left: 100px;
+   margin-left: 500px;
+   vertical-align: middle;
+   width: 10em;
+   text-shadow: 5px 5px 5px 3px rgba(126, 120, 120, 0.616);
+   font-family: poppins;
+   margin-top: 20px;
+}
+.DIVNYC img {
+   margin-left: 1px;
+}
+
+.SubtituloNovelas {
+  margin-left: 650px;
+  font-family: poppins;
+  padding: 20px;
+}
+
+.TituloNovela1 {
+   margin-left: 40px;
+   font-family: poppins;
+   margin-top: 20px;
+}
+.Novela1 {
+   width: 190px;
+   height: 250px;
+   margin-top: 50px;
+   margin-left: 40px;
+   margin-bottom: 30px;
+}
+.LinkNovela1 {
+   color: #fff;
+   position: center;
+   margin-left: 100px;
+}
+
+.TituloNovela2 {
+   margin-left: 40px;
+   font-family: poppins;
+   margin-top: 20px;
+}
+.Novela2 {
+   width: 190px;
+   height: 250px;
+   margin-top: 50px;
+   margin-left: 40px;
+   margin-bottom: 30px;
+}
+.LinkNovela2 {
+   color: #fff;
+   position: center;
+   margin-left: 100px;
+}
+
+.TituloNovela3 {
+   margin-left: 40px;
+   font-family: poppins;
+   margin-top: 20px;
+}
+.Novela3 {
+   width: 180px;
+   height: 250px;
+   margin-top: 50px;
+   margin-left: 40px;
+   margin-bottom: 30px;
+}
+.LinkNovela3 {
+   color: #fff;
+   position: center;
+   margin-left: 100px;
+}
+
+.TituloNovela4 {
+   margin-left: 40px;
+   font-family: poppins;
+   margin-top: 20px;
+}
+.Novela4 {
+   width: 180px;
+   height: 250px;
+   margin-top: 50px;
+   margin-left: 40px;
+   margin-bottom: 30px;
+}
+.LinkNovela4 {
+   color: #fff;
+   position: center;
+   margin-left: 100px;
+}
+
+.SubtituloCuentos {
+   margin-left: 650px;
+   font-family: poppins;
+}
+.TituloCuento1 {
+   margin-left: 30px;
+   font-family: poppins;
+   margin-top: 20px;
+}
+.Cuento1 {
+   width: 180px;
+   height: 250px;
+   margin-top: 50px;
+   margin-left: 40px;
+   margin-bottom: 30px;
+}
+.LinkCuento1 {
+   color: #fff;
+   position: center;
+   margin-left: 100px;
+}
+
+.TituloCuento2 {
+   margin-left: 80px;
+   font-family: poppins;
+   margin-top: 20px;
+}
+.Cuento2 {
+   width: 180px;
+   height: 250px;
+   margin-top: 55px;
+   margin-left: 40px;
+   margin-bottom: 30px;
+}
+.LinkCuento2 {
+   color: #fff;
+   position: center;
+   margin-left: 100px;
+}
+
+.TituloCuento3 {
+   margin-left: 30px;
+   font-family: poppins;
+   margin-top: 20px;
+}
+.Cuento3 {
+   width: 180px;
+   height: 250px;
+   margin-top: 50px;
+   margin-left: 40px;
+   margin-bottom: 30px;
+}
+.LinkCuento3 {
+   color: #fff;
+   position: center;
+   margin-left: 100px;
+}
+
+.TituloCuento4 {
+   margin-left: 30px;
+   font-family: poppins;
+   margin-top: 20px;
+}
+.Cuento4 {
+   width: 180px;
+   height: 250px;
+   margin-top: 56px;
+   margin-left: 40px;
+   margin-bottom: 30px;
+}
+.LinkCuento4 {
+   color: #fff;
+   position: center;
+   margin-left: 100px;
+}
+
+.TituloGL {
+   text-align: center;
+   background-color: #9d4edd;
+   background-size: cover;
+   border-style: inset;
+   color: #fff; 
+   padding: 20px;
+   font-family: poppins;
+   margin-left: 50px;
+   margin-right: 50px;
+}
+
+.Tabla h4 {
+   text-align: center;
+   font-family: poppins;
+   padding: 20px;
+}
+.Tabla- {
+   text-align: center;
+   width: 1300px;
+   font-family: poppins;
+   margin-left: 20px;
+}
+
+.TablaPart2 td {
+   width: 1300px;
+   height: 300px;
+   font-family: poppins;
+}
+.SeccionT {
+   width: 130px;
+   height: auto;
+   font-family: poppins;
+}
+.SeccionThriller {
+   width: 130px;
+   height: auto;
+   font-family: poppins;
+}
+.SeccionCF {
+   width: 130px;
+   height: auto;
+   font-family: poppins;
+}
+.SeccionF {
+   width: 130px;
+   height: auto;
+   font-family: poppins;
+}
+.SeccionCR {
+   width: 130px;
+   height: auto;
+   font-family: poppins;
+}
+.SeccionVida {
+   width: 130px;
+   height: auto;
+   font-family: poppins;
+}
+.SeccionCiencia {
+   width: 130px;
+   height: auto;
+   font-family: poppins;
+}
+
+.ParaAutoresTitulo {
+   text-align: center;
+   font-family: poppins;
+}
+.ParrafoExplicativo {
+   text-align: center;
+   font-family: poppins;
+   padding: 20px;
+}
+
+.Formulario {
+   text-align: center;
+   color: #fff;
+   background-color: #615396;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   border-radius: 50px;
+   width: 1000px;
+   margin-left: 170px;
+   margin-top: 50px;
+   border-style: inset;
+   background-size: cover;
+   padding: 50px;
+   border-width: 5px;
+   border-style: ridge;
+   border-color: #baa8d3;
+   box-shadow: 20px 20px 30px rgb(0,0,0,0.1);
+   font-family: poppins;
+}
+
+.Enviar {
+   background-color: rgb(187, 161, 211);
+   padding: 10px 30px;
+   width: 100px;
+   height: auto;
+   font-family: poppins;
+   box-shadow: 2px 2px 30px rgb(0,0,0,0.1);
+   border-radius: 10px;
+   color: #fff;
+}
+#Obra {
+   background-color: rgb(187, 161, 211);
+   padding: 20px 30px;
+   height: auto;
+   font-family: poppins;
+   box-shadow: 2px 2px 30px rgb(0,0,0,0.1);
+   border-style: ridge;
+   border-radius: 10px;
+   font-family: poppins;
+}
+form .Ingreso {
+   background-color: rgb(187, 161, 211);
+   color: #fff;
+   padding: 10px 30px;
+   height: auto;
+   font-family: poppins;
+   box-shadow: 2px 2px 30px rgb(0,0,0,0.1);
+   border-style: ridge;
+   border-radius: 10px;
+   font-family: poppins;
+}
