@@ -6,6 +6,7 @@
 
 html {
    scroll-behavior: smooth;
+   background-color: #d8cce7;
 }
 
 .TituloHeader {
@@ -454,6 +455,7 @@ article h2 {
    width: 1300px;
    font-family: poppins;
    margin-left: 20px;
+   background-color: #c5c4c4;
 }
 
 .TablaPart2 td {
@@ -556,4 +558,21 @@ form .Ingreso {
    border-style: ridge;
    border-radius: 10px;
    font-family: poppins;
+}
+
+#RegistroyLogin {
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   padding-top: 100px;
+   display: flex;
+}
+#RegistroyLogin .RegistroyLogin {
+  font-family: poppins;
+  background-color: #9454be;
+  padding: 20px;
+  border-radius: 30px;
+}
+#RegistroyLogin .RegistroyLogin a {
+   color: #fff;
 }
