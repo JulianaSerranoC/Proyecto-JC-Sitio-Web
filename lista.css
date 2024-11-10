@@ -12,8 +12,8 @@ section[id] {
     margin: auto;
     width: 2000px;
     top: 0;
-    position: center;
-    left: 145px;
+    position: fixed;
+    left: 10px;
     z-index: 100;
     margin-left: 150px;
 }
