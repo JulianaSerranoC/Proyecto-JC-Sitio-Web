@@ -9,6 +9,49 @@
     scroll-behavior: smooth;
     background-color: #d8cce7;;
  }
- body {
-   background-image: url;
+ main {
+   width: 100%;
+   padding: 20px;
+   margin: auto;
+   margin-top: 100px;
  }
+ .contenedor {
+   width: 100%;
+   max-width: 800px;
+   margin: auto;
+   position: relative;
+ }
+ .caja_principal {
+   width: 100%;
+   height: auto;
+   padding: 10px 20px;
+   display: flex;
+   justify-content: center;
+   backdrop-filter: blur(10px);
+   background-color: rgb(139, 99, 177);
+ }
+ .caja_principal div {
+   margin: 100px 40px;
+   color: #fff;
+   transition: all 500ms;
+ }
+
+.caja_principal div p,
+.caja_principal div button {
+   margin-top: 30px;
+}
+.caja_principal div h3 {
+   font-weight: 400;
+   font-size: 26px;
+}
+.caja_principal button {
+   padding: 10px 40px;
+   border: 2px solid #fff;
+   background: transparent;
+   font-size: 14px;
+   font-weight: 600;
+   cursor: pointer;
+   color: #fff;
+   outline: none;
+   transform: all 300ms;
+}
