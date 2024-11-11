@@ -1,0 +1,11 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: poppins;
+ }
+ html {
+    scroll-behavior: smooth;
+    background-color: #d8cce7;
+ }

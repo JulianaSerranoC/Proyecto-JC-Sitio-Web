@@ -3,11 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="link rel="preconnect href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="shortcut icon" href="Imagenes_generales/Cercis Editorial.png">
     <link rel="stylesheet" href="css/registro_login.css">
     <title>Registro e Ingreso</title>
 </head>
 <body>
-    
+    <main>
+        <div class="contenedor">
+            <div class="caja_principal">
+
+                <div class="caja_principal_login">
+                    <h3>¿Ya tienes una cuenta?</h3>
+                    <p> Inicia sesión para ingresar en la página y enterarte 
+                        de todas las novedades</p>
+                    <button id="bt_iniciar-sesión">Inicar Sesión</button>
+                </div>
+                <div class="caja_principal_register">
+                    <h3>¿Aún no tienes cuenta?</h3>
+                    <p>Registrate para que puedas iniciar sesión y conocer más acerca 
+                        de nuestra editorial y librería
+                    </p>
+                    <button id="bt_iniciar-sesión">Registrarse</button>
+                </div>
+            </div>
+            <div class="contenedor_login-register">
+                <form class="formulario_login"> 
+                    <h2>Iniciar sesión</h2>
+                    <input type="email" placeholder="Correo Electronico" required>
+                    <input type="password" placeholder="Contraseña" required>
+                    <button>Ingresar</button>
+                </form>
+                <form class="formulario_register">
+                    <h2>Registrarse</h2>
+                    <input type="text" placeholder="Nombres" required>
+                    <input type="text" placeholder="Apellidos" required>
+                    <input type="email" placeholder="Correo Electronico" required>
+                    <input type="password" placeholder="Contraseña" required>
+                    <p>Género</p>
+                    <input type="radio" value="Mujer" id="Mujer" name="Género">
+                    <label for="Género"> Mujer </label>
+                    <input type="radio" value="Hombre" id="Hombre" name="Género">
+                    <label for="Género"> Hombre </label>
+                </form>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
