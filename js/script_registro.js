@@ -14,7 +14,6 @@ document.getElementById("formulario_register").addEventListener("submit", functi
         contraseña: contraseña,
         género: género
     };
-
     localStorage.setItem("usuarioRegistrado", JSON.stringify(usuario))
     window.location.href = "registro_login.html";
 });

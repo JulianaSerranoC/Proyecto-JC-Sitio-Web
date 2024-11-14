@@ -7,10 +7,8 @@ document.getElementById("formulario_login").addEventListener("submit", function 
 
     if (usuarioRegistrado.correo === correoLogin && 
         usuarioRegistrado.contraseña === contraseñaLogin) {
-
             localStorage.setItem("nombreUsuario", usuarioRegistrado.nombre);
             window.location.href = "saludo_index.html";
-
         } else {
             alert("Correo o contraseña incorrectos");
         }

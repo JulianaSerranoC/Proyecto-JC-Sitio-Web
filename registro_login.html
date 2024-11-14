@@ -22,22 +22,23 @@
                 </div>
                 <div class="caja_principal_register">
                     <h3>¿Aún no tienes cuenta?</h3>
-                    <p>Registrate para que puedas iniciar sesión y conocer más acerca 
+                    <p>Regístrate para que puedas iniciar sesión y conocer más acerca 
                         de nuestra editorial y librería
                     </p>
                     <button id="btn_registrarse">Registrarse</button>
                 </div>
             </div>
             <div class="contenedor_login-register">
-                <form class="formulario_login"> 
+                <form id="formulario_login" class="formulario_login"> 
                     <h2>Iniciar sesión</h2>
                     <input type="email" id="correoLogin" placeholder="Correo Electronico" required>
                     <input type="password" id="contraseñaLogin" placeholder="Contraseña" required>
-                    <button type="submit">Ingresar</button>
+                    <button type="submit"> Enviar </button>
+                    <span> <a href="saludo_index.html"> Ingresar a la página </a></span>
                 </form>
-                <form class="formulario_register">
+                <form id="formulario_register" class="formulario_register">
                     <h2>Registrarse</h2>
-                    <input type="text" id="nombres" placeholder="Nombres" required>
+                    <input type="text" id="nombre" placeholder="Nombres" required>
                     <input type="text" id="apellidos" placeholder="Apellidos" required>
                     <input type="email" id="correo" placeholder="Correo Electronico" required>
                     <input type="password" id="contraseña" placeholder="Contraseña" required>

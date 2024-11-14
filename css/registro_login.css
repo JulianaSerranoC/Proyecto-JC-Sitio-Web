@@ -126,6 +126,10 @@
 .formulario_register {
    display: none;
 }
+.formulario_login span a {
+   padding: 20px;
+}
+
 @media screen and (max-width: 850px) {
    main {
       margin-top: 50px;
