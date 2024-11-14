@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ }
+ html {
+    scroll-behavior: smooth;
+    background-color: #d8cce7;
+ }
+ 
+ .TituloHeader {
+    margin-top: 90px;
+ }
+ .linkCerrar {
+    padding: 27px 59px 2px 20px;
+    margin-left: 900px;
+    background-color: rgb(240, 236, 243);
+ }
+ 
