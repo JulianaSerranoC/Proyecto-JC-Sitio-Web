@@ -32,11 +32,11 @@
             <h2 id="mensajeBienvenida"> </h2>
             <script>
 
-                const nombresUsuario = localStorage.getItem("nombresUsuario");
+                const nombreUsuario = localStorage.getItem("nombreUsuario");
 
-                if (nombresUsuario) {
+                if (nombreUsuario) {
                     document.getElementById("mensajeBienvenida").textContent =
-                     `Bienvenid@, ${nombresUsuario}`;
+                     `Bienvenid@, ${nombreUsuario}`;
                 } else {
                     document.getElementById("mensajeBienvenida").textContent = "Bienvenid@";
                 }
@@ -547,4 +547,7 @@
         </div>
     </section>
 </footer>
+<script src="js/script_registro_login.js"></script>
+<script src="js/script_registro.js"></script>
+<script src="js/script_login.js"></script>
 </html>

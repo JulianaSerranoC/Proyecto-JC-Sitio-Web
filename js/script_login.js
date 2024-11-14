@@ -8,7 +8,7 @@ document.getElementById("formulario_login").addEventListener("submit", function 
     if (usuarioRegistrado.correo === correoLogin && 
         usuarioRegistrado.contraseña === contraseñaLogin) {
 
-            localStorage.setItem("nombresUsuario", usuarioRegistrado.nombres);
+            localStorage.setItem("nombreUsuario", usuarioRegistrado.nombre);
             window.location.href = "saludo_index.html";
 
         } else {
