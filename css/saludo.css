@@ -9,11 +9,17 @@
  }
  
  .TituloHeader {
-    margin-top: 90px;
+    margin-top: 100px;
  }
  .linkCerrar {
     padding: 27px 59px 2px 20px;
     margin-left: 900px;
     background-color: rgb(240, 236, 243);
  }
- 
+ .MenudeNavegacion h2 {
+    color: #6337ca;
+    background-color: rgb(240, 236, 243);
+    padding: 10px 20px 30px 20px;
+    display: flex;
+    justify-content: center;
+ }
