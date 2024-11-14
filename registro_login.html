@@ -37,20 +37,21 @@
                 </form>
                 <form class="formulario_register">
                     <h2>Registrarse</h2>
-                    <input type="text" placeholder="Nombres" required>
-                    <input type="text" placeholder="Apellidos" required>
-                    <input type="email" placeholder="Correo Electronico" required>
-                    <input type="password" placeholder="Contraseña" required>
-                    <p>Género</p>
-                    <input type="radio" value="Mujer" id="Mujer" name="Género">
-                    <label for="Género"> Mujer </label>
-                    <input type="radio" value="Hombre" id="Hombre" name="Género">
-                    <label for="Género"> Hombre </label>
-                    <button> Registarse </button>
+                    <input type="text" id="nombres" placeholder="Nombres" required>
+                    <input type="text" id="apellidos" placeholder="Apellidos" required>
+                    <input type="email" id="correo" placeholder="Correo Electronico" required>
+                    <input type="password" id="contraseña" placeholder="Contraseña" required>
+                    <select class="Género" id="género" required>
+                        <option value="" selected disabled>Seleccione su género</option>
+                        <option value="Hombre"> Hombre </option>
+                        <option value="Mujer"> Mujer </option>
+                        <option value="Otro"> Otro </option>
+                    </select>
+                    <button type="submit">Registrarse</button>
                 </form>
             </div>
         </div>
     </main>
-    <script src="script_registro_login.js"></script>
+    <script src="js/script_registro_login.js"></script>
 </body>
 </html>

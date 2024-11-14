@@ -104,22 +104,21 @@
    cursor: pointer;
    outline: none;
 }
-.contenedor_login-register form p {
-   padding: 20px;
-   display: flex;
-   color: rgb(139, 99, 177);
-}
-.contenedor_login-register form label {
-   display: flex;
-   border: none;
-   font-size: 16px;
-   color: rgb(139, 99, 177);
-}
-.contenedor_login-register form input #Mujer, 
-.contenedor_login-register form input #Hombre {
-   display: flex;
-}
 
+.formulario_register #género {
+   padding: 10px;
+   margin-top: 30px;
+   font-family: poppins;
+   font-size: 16px;
+   display: flex;
+   outline: none;
+   color: rgb(85, 60, 107);
+   background-color: #fff;
+   border-style: none;
+}
+.formulario_register #género option {
+   color: rgb(54, 25, 68);
+}
 .formulario_login {
    opacity: 1;
    display: block;
