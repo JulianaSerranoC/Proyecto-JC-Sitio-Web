@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/saludo.css"> /*Agregado para estilos de la página de Bienvenida*/
+    <link rel="stylesheet" href="css/lista.css">
+    <link rel="stylesheet" href="css/testimonios.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="shortcut icon" href="Imagenes_generales/Cercis Editorial.png">
+    <link href="link rel="preconnect href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <title> Libreria/Editorial Cercis</title>
+</head>
+<body>
+    <header>
+        <div class="TituloHeader">
+             <div class="TituloCercis">
+                <h1> CERCIS </h1>
+             </div>
+             <img src="Imagenes_generales/Cercis Editorial.png" 
+             class="Cercis" alt="Cercis">
+             <div class="TituloSecundario">
+                <h6> Editorial y Librería </h6>
+             </div>
+        </div>
+        <div id="listaheader">
+        <nav class="MenudeNavegacion">
+            <h2 id="mensajeBienvenida"> </h2>
+            <script>
+
+                const nombresUsuario = localStorage.getItem("nombresUsuario");
+
+                if (nombresUsuario) {
+                    document.getElementById("mensajeBienvenida").textContent =
+                     `Bienvenid@, ${nombresUsuario}`;
+                } else {
+                    document.getElementById("mensajeBienvenida").textContent = "Bienvenid@";
+                }
+
+            </script>
+            <ul class="Lista" type="squate">
+                <li><a href="#Sobre-Nosotros"> Sobre Nosotros</a></li>
+                <li><a href="#Para-Lectores"> Para Lectores 
+                    <ul type="circle">
+                        <li><a href="#Más-Leídos"> Más Leídos </a></li>
+                        <li><a href="#Novelas-Cuentos"> Novelas y Cuentos </a></li>
+                    </ul>
+                </a> </li>
+                <li><a href="#GenerosLiterarios"> Generos Literarios</a></li>
+                <li><a href="#Para-Autores"> Para Autores</a></li>
+                <li><a href="#Reseñas-Clientes"> Reseñas de Clientes</a></li>
+                <li><a href="#Contacto"> Contacto y Redes Sociales</a></li>
+            </ul>
+        </nav>
+        </div>
+        <div id="RegistroyLogin">
+            <div class="RegistroyLogin"> <h3> <a href="registro_login.html" target="_self"> 
+                ¡Regístrate o Ingresa aquí! </a> </h3> </div>
+        </div>
+    </header>
+    <br>
+    <br>
+    <main>
+        <article>
+            <h2> ¿Quiénes Somos? </h2> 
+        </article>
+        <section class="Seccion1" id="Sobre-Nosotros">
+            <article>
+                <img src="Imagenes_generales/SobreNosotros_.jpg" alt="MiniLibreria">
+            </article>
+            <article>
+                <p class="ParrafoS1"> Somos una Editorial/Librería que tiene dos objetivos principales.
+                En primer lugar, brindamos a aquellos amantes de la literatura una amplia gama de libros
+                de distintos géneros, desde romance hasta terror y ciencia ficción (los libros
+                parten de otras librerías o tiendas distintas como Panamericana y Amazon).
+                Tendrán la opción
+                de obtenerlos, tanto de forma digital como física. En caso de querer comprarlos en forma física, 
+                deberán contactarnos en la sección de redes sociales para más información. </p>
+                <p class="ParrafoS2"> En segundo lugar, con ayuda de un equipo de trabajo 
+                    conformado por diseñadores gráficos,
+                    editores y asesores de publicidad, realizamos los procesos de edición
+                     y maquetación de libros
+                    de autores jovenes que deseen mostrar su talento al mundo. 
+                    ¡En Cercis apoyamos los proyectos
+                    literarios de autores emergentes! </p>
+            </article>
+        </section>
+        <br>
+        <br>
+        <section id="Para-Lectores">
+        <h2 class="ParaLectores"> Para Lectores </h2>
+        <section>
+            <article id="Más-Leídos">
+                 <h3 class="MasLeidos" > Más Leídos</h3>
+            </article>
+                    <article>
+                                <div id="slides">     
+                                    <div id="overflow">
+                                        <div class="inner">
+                                            <div class="slide slide_1">
+                                                <div class="slide-content">
+                                                    <h4 class="TituloLibro1"> Aprendizaje basado </h4>
+                                                        <h4 class="TituloLibro12"> en problemas:  </h4>
+                                                        <h4 class="TituloLibro13"> ¿cómo aprender a gestionar  </h4>
+                                                        <h4 class="TituloLibro14"> retos y proyectos?  </h4>
+                                                    <br>
+                                                    <img src="MasLeidos_Img/Aprendizaje_basado_en_problemas_libro_1.jpeg" 
+                                                    class="Libro1" alt="Novedad1">
+                                                    <br>
+                                                    <h4><a href="https://www.panamericana.com.co/aprendizaje-basado-en-problemas-como-aprender-a-gestionar-retos-y-proyectos-684512/p" 
+                                                        target="_blank" class="LinkLibro1"> ¡Compra ya! </a></h4>
+                                                </div>
+                                            </div>
+                                            <div class="slide slide_2">
+                                                <div class="slide-content">
+                                                    <h3 class="TituloLibro2"> En Agosto nos vemos </h3>
+                                                    <br>
+                                                    <img src="MasLeidos_Img/En_Agosto_Nos_Vemos_Titulo_Libro_2.png" 
+                                                    class="Libro2" alt="Novedad2">
+                                                    <br>
+                                                    <h4><a href="https://www.panamericana.com.co/en-agostonos-vemos-670586/p" 
+                                                        target="_blank" class="LinkLibro2"> ¡Compra ya! </a></h4>
+                                                </div>
+                                            </div>
+                                            <div class="slide slide_3">
+                                                <div class="slide-content">
+                                                    <h3 class="TituloLibro3"> Los siete maridos </h3>
+                                                    <h3 class="TituloLibro3"> de Evelyn Hugo </h3>
+                                                    <br>
+                                                    <img src="MasLeidos_Img/Los_7_maridos_de_Evelyn_Hugo_Libro3_copia.jpg" 
+                                                    class="Libro3" alt="Novedad3">
+                                                    <br>
+                                                    <h4><a href="https://www.panamericana.com.co/los-siete-maridos-de-evelyn-hugo-605908/p" 
+                                                        target="_blank" class="LinkLibro3"> ¡Compra ya! </a></h4>
+                                                </div>
+                                            </div>
+                                            <div class="slide slide_4">
+                                                <div class="slide-content">
+                                                    <h3 class="TituloLibro4"> La guerra de los mundos </h3>
+                                                    <br>
+                                                    <img src="MasLeidos_Img/La_guerra_de_los_mundos_Libro4_mejorado.jpg" 
+                                                    class="Libro4" alt="Novedad4">
+                                                    <br>
+                                                    <h4><a href="https://www.panamericana.com.co/la-guerra-de-los-mundos-3/p" 
+                                                        target="_blank" class="LinkLibro4"> ¡Compra ya! </a></h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                
+                                </div>
+                    </article>
+                </section>
+                <br>
+                <br>
+                <br>
+                <section>
+                    <div class="DIVNYC" id="Novelas-Cuentos">
+                        <img src="Imagenes_generales/Imagen_Fondo_morado.jpg" alt="NovelasyCuentos">
+                        <h2 class="NovelasyCuentos" > Novelas y Cuentos </h2>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <div>
+                        <h3 class="SubtituloNovelas"> Novelas </h3>
+                    </div>
+                    <div id="slides">     
+                        <div id="overflow">
+                            <div class="inner">
+                                <div class="slide slide_1">
+                                    <div class="slide-content">
+                                        <h3 class="TituloNovela1"> Romper el circulo </h3>
+                                        <br>
+                                        <img src="Novelas_Img/Novela_1_Imagen.jpg" 
+                                        class="Novela1" alt="Novela1">
+                                        <br>
+                                        <h4><a href="https://www.casadellibro.com.co/libro-romper-el-circulo/9786280003214/14268976" 
+                                            target="_blank" class="LinkNovela1"> ¡Compra ya! </a></h4>
+                                    </div>
+                                </div>
+                                <div class="slide slide_2">
+                                    <div class="slide-content">
+                                        <h3 class="TituloNovela2"> Madame Bovary </h3>
+                                        <br>
+                                        <img src="Novelas_Img/Novela_2_Imagen.jpg" 
+                                        class="Novela2" alt="Novela2">
+                                        <br>
+                                        <h4><a href="https://www.amazon.com/-/es/Madame-Bovary-Penguin-Classics-Deluxe/dp/014310649X/ref=sr_1_1?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2DANN0URAYU9R&dib=eyJ2IjoiMSJ9.3xNRCNzU8NlgyrOd5_L3jFZrngi1G3afxWKNGeR1l1cDG5XV6Hu6B_DBk6jvhJIwVM_Tj2R4qk4XxhOjO-ihb4OtfBkvmqwMV_-DeHrWhyfsMvN2sE1XJ3c7tZif1g9UuMzT4noXDh09MVMe-EMlPUR3vc2qVK1m71rvlySlH0fafsOhfAZHQ7GnbrlyEeAp0mRB3Wvttbfxx-YYxm7-KwcI2wco0V5lQp0XV3tW9Zg.WpJtw0OnvZCs85C9kyyB95bA0FBudqn-Q67Sh2iumCM&dib_tag=se&keywords=madame+bovary&qid=1729728539&s=books&sprefix=madame+bovary%2Cstripbooks-intl-ship%2C152&sr=1-1" 
+                                            target="_blank" class="LinkNovela2"> ¡Compra ya! </a></h4>
+                                    </div>
+                                </div>
+                                <div class="slide slide_3">
+                                    <div class="slide-content">
+                                        <h3 class="TituloNovela3"> Crimen y Castigo </h3>
+                                        <br>
+                                        <img src="Novelas_Img/Novela_3_Imagen.jpg" 
+                                        class="Novela3" alt="Novela3">
+                                        <br>
+                                        <h4><a href="https://www.casadellibro.com.co/libro-crimen-y-castigo/9788490653517/6048452" 
+                                            target="_blank" class="LinkNovela3"> ¡Compra ya! </a></h4>
+                                    </div>
+                                </div>
+                                <div class="slide slide_4">
+                                    <div class="slide-content">
+                                        <h4 class="TituloNovela4"> El tatuador de Auschwitz </h4>
+                                        <br>
+                                        <img src="Novelas_Img/Novela_4_Imagen.jpg" 
+                                        class="Novela4" alt="Novela4">
+                                        <br>
+                                        <h4><a href="https://www.casadellibro.com.co/libro-el-tatuador-de-auschwitz/9789584274557/13513831" 
+                                            target="_blank" class="LinkNovela4"> ¡Compra ya! </a></h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <div>
+                        <h3 class="SubtituloCuentos"> Cuentos </h3>
+                    </div>
+                    <div id="slides">     
+                        <div id="overflow">
+                            <div class="inner">
+                                <div class="slide slide_1">
+                                    <div class="slide-content">
+                                        <h4 class="TituloCuento1"> Cuentos de Edgar Allan Poe </h4>
+                                        <br>
+                                        <img src="Cuentos_Img/EAP_Cuentos.jpg" 
+                                        class="Cuento1" alt="Cuento1">
+                                        <br>
+                                        <h4><a href="https://www.amazon.com/-/es/Cuentos-Colecci%C3%B3n-Edgar-Volumen-Ilustrado/dp/B09X3N8XM8/ref=sr_1_3?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1E1IM9GFWF6Q2&dib=eyJ2IjoiMSJ9.1nCpWafPEvxLfbCVpHHD0TFajyfO0fxpGP4k-APf3iMrfcPQ6FkvJXwFJRPs7ehSTDqNe7kUjQwz9FAnOhwocf1pvwPo4fovcHpcRG_98H5keVMiNv6iTvGB-5x5hfQTm8a56VPNOoQuII4nzIkCM5BcXIDL_O-7Dnua0grvKPJlNSwfWcFjdxAR5Hyso8xhbRZuQg6BuDKjovkVATJyZZTN6a6J0yciETapqVoF29s.VUAuu6laRcB-D6B9J57AF6IaqwCNUJuiNZrteigGHAM&dib_tag=se&keywords=cuentos+de+edgar+allan+poe&qid=1729728410&s=books&sprefix=cuentos+de+edgar+allan+po%2Cstripbooks-intl-ship%2C124&sr=1-3" 
+                                            target="_blank" class="LinkCuento1"> ¡Compra ya! </a></h4>
+                                    </div>
+                                </div>
+                                <div class="slide slide_2">
+                                    <div class="slide-content">
+                                        <h3 class="TituloCuento2"> Carmilla </h3>
+                                        <br>
+                                        <img src="Cuentos_Img/Carmilla_Cuentos.jpg" 
+                                        class="Cuento2" alt="Cuento2">
+                                        <br>
+                                        <h4><a href="https://www.panamericana.com.co/carmilla-629400/p" 
+                                            target="_blank" class="LinkCuento2"> ¡Compra ya! </a></h4>
+                                    </div>
+                                </div>
+                                <div class="slide slide_3">
+                                    <div class="slide-content">
+                                        <h4 class="TituloCuento3"> Bola de Sebo y otros relatos </h4>
+                                        <br>
+                                        <img src="Cuentos_Img/Bola_de_Sebo_Cuentos.jpg" 
+                                        class="Cuento3" alt="Cuento3">
+                                        <br>
+                                        <h4><a href="https://www.casadellibro.com.co/ebook-bola-de-sebo-y-otros-relatos-ebook/9788467041828/2303979" 
+                                            target="_blank" class="LinkCuento3"> ¡Compra ya! </a></h4>
+                                    </div>
+                                </div>
+                                <div class="slide slide_4">
+                                    <div class="slide-content">
+                                        <h3 class="TituloCuento4"> Las mil y una noches </h3>
+                                        <br>
+                                        <img src="Cuentos_Img/Las_mil_y_una_noches_Cuento....webp" 
+                                        class=" Cuento4" alt="Cuento4">
+                                        <br>
+                                        <h4><a href="https://www.panamericana.com.co/las-mil-y-una-noches-648894/p" 
+                                            target="_blank" class="LinkNovela4"> ¡Compra ya! </a></h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                
+                    </div>
+                </section>
+        </section>
+        <br>
+        <br>
+        <br>
+        <section id="GenerosLiterarios">
+            <div class="TituloGL">
+                <h2> Generos Literarios </h2>
+            </div>
+            <br>
+            <div class="Tabla">
+                <h4> A continuación se presenta una tabla con los más vendidos de cada género </h4>
+                <table class="Tabla-" border="4px">
+                    <tr class="TablaPart1">
+                        <th> Generos </th>
+                        <td> Terror </td>
+                        <td> Thriller Psicológico </td>
+                        <td> Ciencia Ficción </td>
+                        <td> Fantasía </td>
+                        <td> Comedia Romantica </td>
+                        <td> Vida </td>
+                        <td> Ciencia </td>
+                    </tr>
+                    <tr class="TablaPart2">
+                        <th> Más Vendidos </th>
+                        <td> <h5> Holly </h5> <img src="Tabla_Img/Holly_Tabla_TerrorSeccion.jpg" 
+                            class="SeccionT" alt="Holly"> </td>
+                        <td> <h5> No huyas </h5> <img src="Tabla_Img/No_Huyas_ThrillerSeccion.jpg"
+                            class="SeccionThriller" alt="No_Huyas"> </td>
+                        <td> <h5> Tierra Profana </h5> <img src="Tabla_Img/Tierra_profana_CFSeccion.jpg" 
+                            class="SeccionCF" alt="Tierra_Profana"> </td>
+                        <td> <h5> Asesina de Dioses </h5> <img src="Tabla_Img/asesina_de_dioses_fantasiaseccion.avif" 
+                            class="SeccionF" alt="Asesina_de_dioses"> </td>
+                        <td> <h5> El Amor ha Muerto </h5> <img src="Tabla_Img/El_amor_ha_muerto_CRSeccion.webp"
+                             class="SeccionCR" alt="El_Amor_ha_Muerto"> </td>
+                        <td> <h5> Hábitos Atómicos </h5> <img src="Tabla_Img/Habitos_Atomicos_VidaSeccion.webp"
+                            class="SeccionVida" alt="Hábitos_Atómicos"> </td>
+                        <td> <h5> Diccionario del Asombro </h5> <img src="Tabla_Img/Diccionario_del_ asombro_CienciaSeccion.jpeg"
+                            class="SeccionCiencia" alt="Diccionario_del_asombro"> </td>
+                    </tr>
+                    <tr> 
+                        <th> Adquierelo ya </th>
+                        <td> <a href="https://www.amazon.es/Holly-Edici%C3%B3n-en-espa%C3%B1ol-%C3%89xitos/dp/8401031117/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=J8HSS93GOQVT&dib=eyJ2IjoiMSJ9.24Z_zLc5IaqCudEADBQ3X0UXU5uHSilNUuhXajsvBPX5KWvbAJRu9TH9idgHoGbpF30MfPSfjERnThiIAUIk5sNsrYHUEhXHF9grA_Uz_LiDp2x8F_PxHo_o9OSxAKU0CAzgccvXdbTdQD6FVi1bxv_tQpWwJ_9cF-GN6NYQA0DTa1mU4peTRVmz68ABpOg6ZdMGXVE91m3BI5ylab1LrhV5rpzEQFpTKePlj5QSIcDpUlGCHmOHlmoaDh1Xg5v83RJwDGCl_9V_kRdK2tkBAfUryH50tJ2TcUWQuFZaVGI.cYKwG_VVG208GlCF6_qN1GEbmkOWBU5jd9hPg7nibxg&dib_tag=se&keywords=holly&qid=1729703963&sprefix=holl%2Caps%2C309&sr=8-1" 
+                            target="_blank"> Comprar en Amazon </a> </td>
+                        <td> <a href="https://www.amazon.es/huyas-Alfaguara-Negra-Sandrone-Dazieri/dp/8420461520/ref=sr_1_1?crid=SMRF3981ZLR9&dib=eyJ2IjoiMSJ9.y-SEmaxKkzgmfb3yoNHh5e4ANYWMS4-zNWH_NK5oqnf_7x4cyt91Zv3jQSo87_HryjP1D283lt9Evd4QGOux9P2Gq3m6qdiIp9I_dVxe8ImdawnwPX3EOsliK30_ZzeQKyBHCOKyrvN5BaLMGfhWH6qeqbDCZBouNxL_rCGoFH9GOFVUFFkDDYdHR_YMAxGPqg3o9TSYNYROfQxmBh5KHbdESMpzaOOD4IrrXbvxNQx6jQuAtabpjySsdziyt4Qz6RI9D8lWxW-Z3G2Ycw7SYjQOq2iec_YtnnzMqcxDXnY.enzxRihZ6_P4Ti8_51ySHCKOnsx-n8KPvqc9iyoqz48&dib_tag=se&keywords=no+huyas&qid=1729703925&sprefix=no+huy%2Caps%2C406&sr=8-1" 
+                            target="_blank"> Comprar en Amazon </a> </td>
+                        <td> <a href="https://www.amazon.es/Tierra-profana-FANTASIA-LAVIE-TIDHAR/dp/8412572564/ref=sr_1_1?crid=BQCF2LL28NXW&dib=eyJ2IjoiMSJ9.R6fzL5cjK-EWy4vvOlnfYGNu-HMt7ZLqjEJOU69KAq5yp-TF471QVGR90XgQ2RZeqrc2He7T8BrDa8n4V7U6GQ_18BbqNJhzIzjgR6LEpMZCSFB51bf70aL7tZa1nTuFdM_YiL0x8P_5oDwesjEEf6aon7hsJWBTFSGy2r29tVi3g1LnUkP_fVOg3eW7azODhadDf4aEy9_t33rNfpmrmw.PSeKwjvV1GimVNo6Zz1GuWiRSLPGeTpO7eCemY6-YPo&dib_tag=se&keywords=tierra+profana&qid=1729703880&sprefix=tierra+pr%2Caps%2C386&sr=8-1" 
+                            target="_blank"> Comprar en Amazon </a> </td>
+                        <td> <a href="https://www.amazon.es/Asesina-dioses-Umbriel-narrativa-Hannah/dp/8419030678/ref=sr_1_1?crid=2JLJ7HZINICV6&dib=eyJ2IjoiMSJ9.hzQzP8S70StI21J6BDWhfRkFaIDSvTdo22-l9ik8mu5SbgljhuhklJZ2TAzUJblKtbw6fVS6ga7nec1ecRAn1BZ0byPsm7yD5g-r3Z8d0jviM4frt8SXvRE6m7SoffnwR2UJBM-881LvigrGH5DfcBSt7oaPq09OthyXfgRmvn9yc-3kT2Sb2AE9T-oTRzY7PlYOSHTVJYDBnblaLiLCkNVB1rsgPCM3d7_Ksl2BGYsDjx8DUZYzD9LG-zM4mYTmShDrCFBJqwWbS0j07IkCg0JSnM1Q8Q-gDKk9oLNy-AE.Gg_3cy7TGsTjiRKe0UrntAiiNgtr46yzFPUEan3rQjY&dib_tag=se&keywords=asesina+de+dioses&qid=1729703843&sprefix=asesina+de+d%2Caps%2C400&sr=8-1" 
+                            target="_blank"> Comprar en Amazon </a> </td>
+                        <td> <a href="https://www.amazon.es/El-amor-muerto-Best-Seller/dp/8466375619/ref=sr_1_1?crid=2QIP7CJZYRGU1&dib=eyJ2IjoiMSJ9.Jt_mWYArtYCzphp9rJPojJzHeqgkGHWPW84d97ULXd_mORUWZCawuD6GzRBNMoc6qnvqVULLKZnwODjlqQnTw6m9YAanmUF9mAz7CUkxLX6l8aQ5ZZkjK3wnMPyHiC4vBXLt-9KOnDs6ZY-ko2YBrVcAXvlH4U6z1ucMOXbbRvpdd6KmxcdNW785V0sxWUrdXSsPLIKMrW7ehv2GMGN7H9HQ1SJC9LeK63OydtbRDvB3vi-pCoCAonuh6bZ4PZ5vYQpybLnawmK0R09dWd0uO1uH_e33UeX86aWetutljPI.f8CUyIpBmciGsI-GhNorOjsqrt94WLoKPk84hyI2DSw&dib_tag=se&keywords=el+amor+ha+muerto&qid=1729703791&sprefix=el+amor+ha+m%2Caps%2C275&sr=8-1"
+                            target="_blank"> Comprar en Amazon </a> </td>
+                        <td> <a href="https://www.amazon.es/dp/8418118032?tag=planetadelibr-21" 
+                            target="_blank"> Comprar en Amazon </a> </td>
+                        <td> <a href="https://www.amazon.com/-/es/Antonio-Mart%C3%ADnez-Ron/dp/8491995676" 
+                            target="_blank"> Comprar en Amazon </a> </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <br>
+        <br>
+        <br>
+        <section id="Para-Autores">
+            <div>
+                <h2 class="ParaAutoresTitulo"> Para Autores </h2>
+                <p class="ParrafoExplicativo"> Llene el siguiente formulario si esta interesado en lanzar su obra. 
+                    Al terminar, en unos días recibirá un correo de confirmación por parte de la Editorial Cercis </p>
+            </div>
+            <div id="Formulario">
+                <form class="Formulario">
+                    <label for="nombre"> Nombre: </label>
+                    <input class="Ingreso" type="text" name="nombre" placeholder="Ingrese su nombre" required>
+                    <br>
+                    <br>
+                    <label for="edad"> Edad: </label>
+                    <input class="Ingreso" type="number" min="15" max="35" name="edad" required>
+                    <br>
+                    <br>
+                    <label for="correo"> Correo: </label>
+                    <input class="Ingreso" type="email" name="Correo" placeholder="Ingrese su correo" required>
+                    <br>
+                    <br>
+                    <p> <strong> Género de la Obra: </strong> </p> <br>
+                    <label for="GeneroObra"> Terror </label>
+                    <input type="radio" value="GTerror" id="GTerror" name="GeneroObra">
+
+                    <label for="GeneroObra"> Thriller Psicológico </label>
+                    <input type="radio" value="GThriller" id="GThriller name="GeneroObra">
+
+                    <label for="GeneroObra"> Ciencia Ficción </label>
+                    <input type="radio" value="GCienciaFiccion" id="GCienciaFiccion" name="GeneroObra">
+
+                    <label for="GeneroObra"> Fantasía </label>
+                    <input type="radio" value="GFantasia" id="GFantasia" name="GeneroObra">
+
+                    <label for="GeneroObra"> Comedia Romantica </label>
+                    <input type="radio" value="GComediaR" id="GComediaR" name="GeneroObra">
+
+                    <label for="GeneroObra"> Vida </label>
+                    <input type="radio" value="GVida" id="GVida" name="GeneroObra">
+
+                    <label for="GeneroObra"> Ciencia </label>
+                    <input type="radio" value="GCiencia" id="GCiencia" name="GeneroObra">
+                    <br>
+                    <br>
+                    <label for="SubirObra"> Subir en un archivo PDF un resumen de la obra, acompañado
+                        de alguno de los capitulos de más importancia (elección personal) </label>
+                        <br> <br>
+                    <input type="file" required value="Obra" id="Obra" name="SubirObra">
+                    <br>
+                    <br>
+                    <input class="Enviar" type="submit">  
+                </form>
+            </div>
+        </section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <section id="Reseñas-Clientes">
+            <div class="HeaderReseñas">
+                <h3> Reseñas </h3>
+                <h2> Los Clientes dicen... </h2>
+            </div>
+            <div class="ReseñasContainer">
+
+                <div class="Caja">
+                    <div class="box-top">
+                        <div class="profile"> 
+                            <div class="profile-imagen"> <img src="Imagenes_generales/imagenes_testimonios/c-1.jpg"> </div>
+                            <div class="nombre-usuario"> 
+                                <strong> Max Beltrán </strong>
+                                <span> @maxbeltran </span>
+                             </div>
+                        </div>
+                        <div class="reseñas"> 
+                            <i class="fas fa-star"> </i>
+                            <i class="fas fa-star"> </i>
+                            <i class="fas fa-star"> </i>
+                            <i class="fas fa-star"> </i>
+                            <i class="far fa-star"> </i>
+                        </div>
+                    </div>
+                    <div class="comentario-cliente">
+                        <p> ¡La calidad de los libros de la página es muy buena! 
+                            Me gusta mucho que incluso se incluyan clásicos que 
+                        para muchos han sido olvidados por los siglos, pero lo cierto es que
+                    aún siguen siendo emblemáticos. </p>
+                    </div>
+                </div>
+                <div class="Caja">
+                    <div class="box-top">
+                        <div class="profile"> 
+                            <div class="profile-imagen"> <img src="Imagenes_generales/imagenes_testimonios/c-2.jpg"> </div>
+                            <div class="nombre-usuario"> 
+                                <strong> Lara Raj </strong>
+                                <span> @Lararj </span>
+                             </div>
+                        </div>
+                        <div class="reseñas"> 
+                            <i class="fas fa-star"> </i>
+                            <i class="fas fa-star"> </i>
+                            <i class="fas fa-star"> </i>
+                            <i class="fas fa-star"> </i>
+                            <i class="fas fa-star"> </i>
+                        </div>
+                    </div>
+                    <div class="comentario-cliente">
+                        <p> Las tiendas elegidas para la compra, adquisición y envío de los libros
+                            son bastante eficientes. Hasta ahora me han llegado distintas
+                        entregas, sobre todo por parte de Amazon, y es muy práctico y 
+                        rápido el proceso. </p>
+                    </div>
+                </div>
+                <div class="Caja">
+                    <div class="box-top">
+                        <div class="profile"> 
+                            <div class="profile-imagen"> <img src="Imagenes_generales/imagenes_testimonios/c-3.jpg"> </div>
+                            <div class="nombre-usuario"> 
+                                <strong> Daniela Avanzini </strong>
+                                <span> @DannyAvanzini </span>
+                             </div>
+                        </div>
+                        <div class="reseñas"> 
+                            <i class="fas fa-star"> </i>
+                            <i class="fas fa-star"> </i>
+                            <i class="fas fa-star"> </i>
+                            <i class="fas fa-star"> </i>
+                            <i class="far fa-star"> </i>
+                        </div>
+                    </div>
+                    <div class="comentario-cliente">
+                        <p> Hace poco comencé mi proceso editorial con Cercis, y ha sido
+                            un trabajo colaborativo muy ameno. Lo único a resaltar es que en mi caso el correo
+                        de confirmación no tardo dos días, sino apróximadamente unos cuatro días. 
+                    Por lo demás, muy bueno. </p>
+                    </div>
+                </div>
+                <div class="Caja">
+                    <div class="box-top">
+                        <div class="profile"> 
+                            <div class="profile-imagen"> <img src="Imagenes_generales/imagenes_testimonios/c-4.jpg"> </div>
+                            <div class="nombre-usuario"> 
+                                <strong> Sofia Laforteza </strong>
+                                <span> @Soph </span>
+                             </div>
+                        </div>
+                        <div class="reseñas"> 
+                            <i class="fas fa-star"> </i>
+                            <i class="fas fa-star"> </i>
+                            <i class="fas fa-star"> </i>
+                            <i class="fas fa-star"> </i>
+                            <i class="fas fa-star"> </i>
+                        </div>
+                    </div>
+                    <div class="comentario-cliente">
+                        <p> ¡Recomendadísimo! Mi libro esta en proceso de lanzamiento,
+                            y es genial la manera en la que tratan el trabajo del autor,
+                        siempre respetando sus desiciones y consultando antes de incluir un 
+                        cambio significativo en la obra. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<br>
+<br>
+<br>
+<footer>
+    <section id="Contacto">
+        <div class="CajaPrincipalFooter">
+
+            <div class="Logo">
+                <img src="Imagenes_generales/Cercis-removebg-preview.png" alt="Logo">
+                <p> Aquí encontrarás información de contacto adicional e información acerca de 
+                    las redes sociales disponibles de la Editorial Cercis, a través de las cuales
+                    puedes comunicarte con nosotros en los respectivos horarios de atención. </p>
+            </div>
+            <div class="Contacto_">
+                <div> 
+                    <h3> Contactos </h3> 
+                </div>
+                <div>
+                    <i class="fas fa-phone"></i>
+                    <span> +57 3012943890 </span> <br> <br> <br>
+                    <i class="fas fa-envelope"></i>
+                    <span> cerciseditorial@gmail.com </span> <br> <br> <br>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span> Barranquilla-Atlántico </span>
+                </div>
+            </div>
+            <div class="RedesSociales">
+                <div>
+                    <h3> Redes Sociales </h3>
+                </div>
+                <div class="LinkRedes">
+                    <i class="fab fa-facebook-f"></i>
+                    <span><a href="https://www.canva.com/design/DAGVcDBoTUc/KhLRdIMFdvVUmPPgjSZB3Q/view?utm_content=DAGVcDBoTUc&utm_campaign=designshare&utm_medium=link&utm_source=editor" 
+                        target="_blank" class="LinkFacebook"> Facebook </span> <br> <br> <br>
+                    <i class="fa fa-twitter"></i>
+                    <span><a href="https://www.canva.com/design/DAGV21yYMAs/YbxVUyUH0dqXGBC-TXcq6g/view?utm_content=DAGV21yYMAs&utm_campaign=designshare&utm_medium=link&utm_source=editor" 
+                        target="_blank" class="LinkTwitter"> Twitter </span> <br> <br> <br>
+                    <i class="fa fa-instagram"></i>
+                    <span><a href="https://www.canva.com/design/DAGWBmA9lJs/-bNLLjXqKQfzPZfXhBDfwg/view?utm_content=DAGWBmA9lJs&utm_campaign=designshare&utm_medium=link&utm_source=editor" 
+                        target="_blank" class="LinkInstagram"> Instagram </span>
+                </div>
+            </div>
+        </div>
+    </section>
+</footer>
+</html>

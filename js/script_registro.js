@@ -7,12 +7,14 @@ document.getElementById("formulario_register").addEventListener("submit", functi
     const contraseña = document.getElementById("contraseña").value;
     const género = document.getElementById("género").value;
 
-    const usuario {
+    const usuario = {
         nombres: nombres,
         apellidos: apellidos,
         correo: correo,
         contraseña: contraseña,
         género: género
-    }
-    
-})
+    };
+
+    localStorage.setItem("usuarioRegistrado", JSON.stringify(usuario))
+    window.location.href = "registro_login.html";
+});
