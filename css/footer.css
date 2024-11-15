@@ -55,6 +55,7 @@ footer {
 }
 .LinkRedes i {
     color: #fff;
+    cursor: default;
 }
 .LinkInstagram {
     color: #fff;
@@ -67,4 +68,24 @@ footer {
 .LinkTwitter {
     color: #fff;
     font-family: poppins;
+}
+.derechos_reservados {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+    cursor: default;
+}
+.derechos_reservados div img {
+    width: 100px;
+    height: auto;
+    padding: 0px;
+}
+.derechos_reservados div span {
+    color: #fff;
+    display: flex;
+    text-decoration: underline none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
