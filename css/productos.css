@@ -5,4 +5,62 @@
 }
 html {
     scroll-behavior: smooth;
+    font-family: poppins;
+}
+.Caja_principal {
+    display: flex;
+}
+.Caja_imagen {
+    display: flex;
+    flex-basis: 25%;
+    padding: 5px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+.Caja_imagen:hover {
+    transform: translateY(-10px);
+    transition: all ease 0.3s;
+    box-shadow: 2px 2px 30px rgb(0,0,0,0.1);
+}
+.Caja_imagen img {
+    width: 600px;
+    margin-left: 100px;
+    margin-top: 100px;
+    margin-bottom: 70px;
+    display: flex;
+    padding: 100px;
+}
+.Sobre_el_libro {
+    margin-left: 50px;
+    margin-right: 20px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    background-color: rgb(139, 99, 177);
+    padding: 50px;
+    color: #fff;
+    border-radius: 20px;
+}
+.Sobre_el_libro:hover {
+    transform: translateY(-10px);
+    transition: all ease 0.3s;
+    box-shadow: 2px 2px 30px rgb(0,0,0,0.1);
+}
+span {
+    text-align: justify;
+}
+.compra {
+    margin-left: 150px;
+    margin-right: 150px;
+    padding: 20px;
+    background-color: rgb(191, 153, 206);
+    text-align: center;
+    cursor: pointer;
+    border-radius: 30px;
+}
+.compra h3 a {
+    color: #fff;
+    text-decoration: none;
+}
+.compra i {
+    margin-right: 10px;
 }
