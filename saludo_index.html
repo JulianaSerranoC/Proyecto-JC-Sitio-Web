@@ -41,8 +41,13 @@
                     document.getElementById("mensajeBienvenida").textContent = "Bienvenid@";
                 }
 
+                document.getElementById("linkCerrar").addEventListener("click", (linkCerrar) => {
+                        localStorage.removeItem("usuario")
+                        window.location.href = "index.html"
+                    });
+
             </script>
-            <span> <a href="index.html" class="linkCerrar"> Cerrar sesión </a> </span>
+            <span> <a href="index.html" class="linkCerrar" id="linkCerrar"> Cerrar sesión </a> </span>
             <ul class="Lista" type="squate">
                 <li><a href="#Sobre-Nosotros"> Sobre Nosotros</a></li>
                 <li><a href="#Para-Lectores"> Para Lectores 
