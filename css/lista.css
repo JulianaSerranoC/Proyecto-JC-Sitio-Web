@@ -54,3 +54,57 @@ ul {
     right: -100px;
     top: 0px;
 }
+
+/*Aplicando Media Queries*/
+
+@media (max-width: 768px) {
+    #listaheader {
+        width: 100%; 
+        margin-left: 0;
+        top: 0;
+        left: 0;
+    }
+
+    .Lista {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        width: 100%;
+    }
+
+    .Lista > li {
+        width: 100%; 
+        float: none;
+    }
+
+    .Lista li ul {
+        position: static;
+        display: none;
+        width: 100%; 
+    }
+
+    .Lista li:hover > ul {
+        display: block;
+        position: relative;
+        width: 100%;
+    }
+
+    .Lista li ul li {
+        padding-left: 15px;
+    }
+
+    .Lista li:hover > ul {
+        animation: slide-down 0.3s ease-in-out;
+    }
+
+    @keyframes slide-down {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}

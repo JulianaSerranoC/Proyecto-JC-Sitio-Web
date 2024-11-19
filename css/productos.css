@@ -51,7 +51,7 @@ span {
 .compra {
     margin-left: 150px;
     margin-right: 150px;
-    padding: 20px;
+    padding: 20px 20px 0px;
     background-color: rgb(191, 153, 206);
     text-align: center;
     cursor: pointer;
