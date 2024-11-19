@@ -575,7 +575,7 @@ form .Ingreso {
    color: #fff;
 }
 
-/*Aplicando Media queries*/
+/*Aplicando Media Queries*/
 
 @media screen and (max-width: 480px) {
    .TituloHeader {
@@ -608,6 +608,7 @@ form .Ingreso {
 }
 article h2 {
    font-size: 20px; 
+   margin-left: 200px;
 }
 
 .Seccion1 {
@@ -617,13 +618,20 @@ article h2 {
 
 .Seccion1 article img {
    width: 90%; 
-   margin-left: 0;
+   margin-left: 150px;
 }
 .ParrafoS1, .ParrafoS2 {
-   margin-right: 20px;
-   margin-left: 20px;
+   margin-right: -100px;
+   margin-left: 160px;
    text-align: justify;
+   justify-content: center;
    padding-top: 20px;
+}
+.ParaLectores {
+   margin-left: 300px;
+}
+.MasLeidos {
+   margin-left: 270px;
 }
 
 .MasLeidos, .TituloLibro1, .TituloLibro2, .TituloLibro3, .TituloLibro4 {
@@ -701,11 +709,11 @@ article h2 {
    padding: 10px;
 }
 #RegistroyLogin .RegistroyLogin {
-   font-size: 14px;
+   width: 200px;
    padding: 10px;
+   margin-left: 300px;
 }
-
 #RegistroyLogin .RegistroyLogin a {
-   font-size: 14px;
+   font-size: 15px;
 }
 }
