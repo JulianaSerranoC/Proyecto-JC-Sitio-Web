@@ -96,7 +96,6 @@ article h2 {
    font-family: poppins;
    padding: 20px;
 }
-
 .TituloLibro1 {
    margin-left: 40px;
    font-family: poppins;
@@ -432,7 +431,6 @@ article h2 {
    position: center;
    margin-left: 100px;
 }
-
 .TituloGL {
    text-align: center;
    background-color: #9d4edd;
@@ -582,18 +580,28 @@ form .Ingreso {
 @media screen and (max-width: 480px) {
    .TituloHeader {
       font-size: 30px; 
-      margin-top: 400px;
-      margin-left: 20px;
+      margin-top: 300px;
+      margin-left: 50px;
       margin-right: 20px;
       padding: 20px; 
       justify-content: flex-start;
   }
   .Cercis {
-   width: 150px; 
+   width: 200px; 
    margin-left: 20px;
+   margin-top: 4px;
 }
-
-.TituloSecundario, .ParaLectores, .TituloGL {
+.TituloCercis h1 {
+   margin-top: 60px;
+}
+.TituloSecundario h6 {
+   font-size: 30px; 
+   margin-left: 40px;
+   text-align: center;
+   color: #9454be;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.ParaLectores, .TituloGL {
    font-size: 16px; 
    margin-left: 20px;
    margin-right: 20px;
