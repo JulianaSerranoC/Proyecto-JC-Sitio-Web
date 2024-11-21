@@ -729,18 +729,38 @@ article h2 {
    margin-left: 0;
    margin-top: 20px;
 }
-
+.TituloNovela1, .TituloNovela2, .TituloNovela3, .TituloNovela4 {
+   margin-left: 200px;
+}
 .SubtituloNovelas, .SubtituloCuentos {
    font-size: 16px;
-   margin-left: 20px;
+   margin-left: 300px;
+   color: #5a189a;
 }
 .Novela1, .Novela2, .Novela3, .Novela4, .Cuento1, .Cuento2, .Cuento3, .Cuento4 {
    width: 140px;
    height: 200px;
-   margin-left: 20px;
+   margin-left: 200px;
    margin-top: 30px;
 }
-
+.LinkNovela1, .LinkNovela2, .LinkNovela3, .LinkNovela4 {
+   margin-left: 220px;
+}
+.TituloCuento1 {
+   margin-left: 150px;
+}
+.TituloCuento2 {
+   margin-left: 220px;
+}
+.TituloCuento3 {
+   margin-left: 150px;
+}
+.TituloCuento4 {
+   margin-left: 160px;
+}
+.LinkCuento1, .LinkCuento2, .LinkCuento3, .LinkCuento4 {
+   margin-left: 220px;
+}
 .Formulario {
    width: 90%; 
    margin-left: 5%;
