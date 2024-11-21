@@ -769,10 +769,19 @@ article h2 {
 .Enviar {
    width: 80px;
 }
-
+.TituloGL {
+   margin-left: 100px;
+   margin-right: -200px;
+}
+.Tabla h4 {
+   margin-left: 100px;
+   margin-right: -200px;
+   font-size: 20px;
+}
 .Tabla- {
    width: 100%; 
    font-size: 14px;
+   margin-right: 200px;
 }
 
 .TablaPart2 td {
@@ -785,12 +794,20 @@ article h2 {
 }
 
 .ParaAutoresTitulo {
-   font-size: 16px;
+   font-size: 20px;
+   margin-left: 300px;
 }
-
 .ParrafoExplicativo {
-   font-size: 14px;
+   font-size: 18px;
    padding: 10px;
+   text-align: justify;
+   justify-content: center;
+   align-items: center;
+   margin-left: 200px;
+   margin-right: -200px;
+}
+#Formulario {
+   margin-right: -350px;
 }
 #RegistroyLogin .RegistroyLogin {
    width: 200px;

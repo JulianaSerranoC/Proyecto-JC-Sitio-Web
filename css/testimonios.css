@@ -118,3 +118,17 @@
     color: #fff;
     background-color: #4b4b4b;
 }
+@media (max-width: 480px) {
+    .HeaderReseñas h3 {
+        font-size: 40px;
+        margin-right: -380px;
+    }
+    .HeaderReseñas h2 {
+        margin-right: -370px;
+    }
+    .Caja {
+        margin-right: -200px;
+        margin-left: 180px;
+        flex-direction: column;
+    }
+}
