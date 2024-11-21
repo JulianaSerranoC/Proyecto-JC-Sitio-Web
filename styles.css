@@ -638,18 +638,57 @@ article h2 {
    font-size: 16px;
    padding: 10px;
 }
-.Libro1, .Libro2, .Libro3, .Libro4 {
+.TituloLibro1 {
+   font-size: 16px;
+   padding: 2px;
+   width: 200px;
+}
+.TituloLibro12 {
+   font-size: 16px;
+   padding: 5px;
+   width: 200px;
+}
+.TituloLibro13 {
+   font-size: 16px;
+   padding: 5px;
+   width: 200px;
+}
+.TituloLibro14 {
+   font-size: 16px;
+   padding: 5px;
+   width: 200px;
+}
+.Libro1 {
+   width: 150px; 
+   height: 180px;
+   margin-left: 20px;
+   margin-top: 60px;
+}
+.Libro2 {
    width: 120px; 
    height: 180px;
    margin-left: 20px;
+   margin-top: 40px;
 }
-
+.Libro3 {
+   width: 120px; 
+   height: 180px;
+   margin-left: 20px;
+   margin-top: 45px;
+}
+.Libro4 {
+   width: 120px; 
+   height: 180px;
+   margin-left: 20px;
+   margin-top: 100px;
+}
 .LinkLibro1, .LinkLibro2, .LinkLibro3, .LinkLibro4 {
-   margin-left: 0;
+   margin-left: 40px;
 }
 #slides {
-   margin-left: 10px;
-   margin-right: 10px;
+   width: 800px;
+   margin-right: 50px;
+   margin-left: -1px;
 }
 
 .NovelasyCuentos {
