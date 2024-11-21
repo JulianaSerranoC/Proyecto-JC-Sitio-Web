@@ -705,8 +705,8 @@ article h2 {
 }
 #slides {
    width: 800px;
-   margin-right: 50px;
-   margin-left: -1px;
+   margin-right: 10px;
+   margin-left: 10px;
 }
 #slides .slide {
    width: 600px;
