@@ -23,3 +23,11 @@
     display: flex;
     justify-content: center;
  }
+ @media (max-width: 480px) {
+   .TituloHeader {
+      margin-top: 400px;
+   }
+   .linkCerrar {
+      margin-left: 350px;
+   }
+ }

@@ -64,3 +64,15 @@ span {
 .compra i {
     margin-right: 10px;
 }
+@media (max-width: 480px) {
+    .Caja_principal {
+      display: block;
+    }
+    .Sobre_el_libro {
+        margin-right: -340px;
+        margin-top: -100px;
+    }
+    .Caja_principal span, .Caja_principal h2, .Caja_principal h3 {
+        font-size: 25px;
+    }
+}
